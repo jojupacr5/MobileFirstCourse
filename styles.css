@@ -150,13 +150,27 @@ main {
     color: #757575;
 }
 
+.main-tables-container {
+    display: flex;
+    height: auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .main-currency-table, .main-commission-table {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
+    scroll-snap-align: center;
     height: 360px;
-    margin: 0 auto;
     font-family: 'Inter', sans-serif;       
+}
+.main-currency-table {
+    margin: 0 20px 0 40px;
+}
+.main-commission-table {
+    margin: 0;
 }
 
 .main-currency-table .currency-table--title, .main-commission-table .commission-table--title {
